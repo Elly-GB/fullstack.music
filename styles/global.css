@@ -14,9 +14,75 @@
 }
 
 :root {
-  /* colors */
-
+  /* colors - 1 */
+  --bg-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-p: #F4F4F5;
+  --text-color-s: #A1A1AA;
+  /* colors - 2 */
+  --brand-color-p: #F7B733;
+  --brand-color-s: #FC4A1A;
   /* font */
-  --font-family: "Inter", serif;
-  /* types */
+  --ff: "Inter", system-ui, serif;
+  /* WEIGHT */
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+  /* SIZE */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.5rem;
+}
+
+html {
+  font-family: var(--ff);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--text-color-p);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--text-color-p);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04rem;
+} 
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+/*  MEDIA QUERIE -------------------------------------------------------------------------- */
+
+@media (width >= 80em) {
+  :root {
+      --fs-lg: 2rem;
+      --fs-xl: 3rem;
+      --fs-2xl: 4rem;
+  }
 }
