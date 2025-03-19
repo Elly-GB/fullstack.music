@@ -36,6 +36,20 @@
   gap: 1rem;
 }
 
+/* Flex , Gap , Grid - Botoes */
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
 /* MEDIA QUERIE ------------------------------------ */
 
 @media (width >= 80em) {
