@@ -48,3 +48,25 @@
   font-size: 1.125rem;
 }
 
+/* Acessibilidade a versao 2.0 */
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+  }
+  &::after {
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+}
