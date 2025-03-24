@@ -50,6 +50,12 @@
   display: grid;
 }
 
+/* centralizar */
+
+.items-center {
+  align-items: center;
+}
+
 /* MEDIA QUERIE ------------------------------------ */
 
 @media (width >= 80em) {
