@@ -51,6 +51,9 @@ html {
   color: var(--text-color-p);
 
   overflow-x: hidden;
+  /* útil: */
+  scroll-behavior: smooth;
+
 }
 
 body {
